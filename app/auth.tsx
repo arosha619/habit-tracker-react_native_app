@@ -17,8 +17,7 @@ export default function AuthScreen() {
       style={styles.container}
     >
       <View style={styles.content}>
-        <Text style={styles.title} variant="headlineMedium">
-          {" "}
+        <Text style={styles.title}>
           {isSignUp ? "Create Account" : "Welcome Back"}
         </Text>
         <TextInput
@@ -71,6 +70,8 @@ const styles = StyleSheet.create({
   title: {
     textAlign: "center",
     marginBottom: 24,
+    fontSize: 28,
+    fontWeight: "bold",
   },
   input: {
     marginBottom: 16,
